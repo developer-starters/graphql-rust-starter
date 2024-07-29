@@ -2,7 +2,7 @@ use tokio::net::TcpListener;
 use tracing::info;
 use tracing_subscriber::{layer::SubscriberExt, util::SubscriberInitExt, EnvFilter, FmtSubscriber};
 
-use my_subgraph::{app, graceful_shutdown};
+use graphql_rust_starter::{app, graceful_shutdown};
 
 #[tokio::main]
 async fn main() {

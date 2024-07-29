@@ -3,7 +3,7 @@ use axum::{
     body::Body,
     http::{self, Request, StatusCode},
 };
-use my_subgraph::app;
+use graphql_rust_starter::app;
 use serde_json::{json, Value};
 use tower::ServiceExt;
 

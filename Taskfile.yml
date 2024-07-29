@@ -20,8 +20,8 @@ tasks:
       - cargo build --release
   docker-build:
     cmds:
-      - docker build . -t rust-starter
+      - docker build . -t graphql-rust-starter:latest
   docker-run:
     cmds:
-      - docker run rust-starter
+      - docker run graphql-rust-starter:latest
     silent: true

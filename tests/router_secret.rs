@@ -1,6 +1,6 @@
 use axum::body::{to_bytes, Body, Bytes};
+use graphql_rust_starter::app;
 use http::{Request, StatusCode};
-use my_subgraph::app;
 use serde_json::{json, Value};
 use tower::ServiceExt;
 

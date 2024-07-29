@@ -1,6 +1,4 @@
-# async-graphql Subgraph Template
-
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/1KF0vV)
+# Reference
 
 This template can be used to quickly create an [Apollo Federation] subgraph with the [async-graphql] crate.
 
@@ -16,7 +14,7 @@ This template can be used to quickly create an [Apollo Federation] subgraph with
 ## Next Steps
 
 - Download [Rover] and start it using the command printed out from `cargo run` to start a local version of Apollo Explorer.
-- Replace "my-subgraph" in `Cargo.toml` with the name of your subgraph.
+- Replace "graphql-rust-starter" in `Cargo.toml` with the name of your subgraph.
 - Start filling in your own types and resolvers in `src/lib.rs`.
 - Set these secrets in GitHub Actions:
   - `APOLLO_KEY`: An Apollo Studio API key for the supergraph to enable schema checks and publishing of the subgraph.

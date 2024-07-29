@@ -1,4 +1,4 @@
-FROM rust:1.80 as builder
+FROM rust AS builder
 WORKDIR /opt/app
 
 RUN apt-get update -qq && apt-get install -yqq musl-tools
@@ -8,8 +8,8 @@ COPY Cargo.lock .
 RUN rustup target add x86_64-unknown-linux-musl 
 RUN cargo build --target x86_64-unknown-linux-musl --release
 
-FROM alpine:3.20.2
+FROM alpine
 
-COPY --from=builder /opt/app/target/x86_64-unknown-linux-musl/release/rust-starter /usr/local/bin
+COPY --from=builder /opt/app/target/x86_64-unknown-linux-musl/release/graphql-rust-starter /usr/local/bin
 
-ENTRYPOINT ["/usr/local/bin/rust-starter"]
+ENTRYPOINT ["/usr/local/bin/graphql-rust-starter"]

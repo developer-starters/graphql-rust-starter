@@ -23,5 +23,5 @@ tasks:
       - docker build . -t graphql-rust-starter:latest
   docker-run:
     cmds:
-      - docker run graphql-rust-starter:latest
+      - docker run -p 4001:4001 --rm graphql-rust-starter:latest
     silent: true
